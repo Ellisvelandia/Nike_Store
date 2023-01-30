@@ -24,7 +24,6 @@ const Stories = ({ story: { title, news } }) => {
       425: { perPage: 1 },
     },
   };
-
   return (
     <>
       <div className="nike-container mb-11">
@@ -61,7 +60,9 @@ const Stories = ({ story: { title, news } }) => {
                     <h1 className="text-base font-semibold lg:text-sm">
                       {val.title}
                     </h1>
-                    <p className="text-sm text-justify lg:text-xs">{truncate(val.text, {length: 175})}</p>
+                    <p className="text-sm text-justify lg:text-xs">
+                      {truncate(val.text, { length: 175 })}
+                    </p>
                   </div>
                   <div className="flex items-center justify-center px-4 w-full">
                     <a
